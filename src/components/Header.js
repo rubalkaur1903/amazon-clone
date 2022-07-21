@@ -2,7 +2,6 @@ import React from 'react';
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartSharpIcon from '@mui/icons-material/ShoppingCartSharp';
 import '../cssFiles/Header.css';
-
 function Header() {
   return (
     <div className='header'>
