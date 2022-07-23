@@ -4,8 +4,10 @@ import "../cssFiles/subtotal.css"
 import { useStateValue } from '../context/StateProvider'
 import { getCartTotal } from './reducer';
 
+
 function Subtotal() {
     const [{cart}] = useStateValue();
+    console.log("function getCartTotal: ", getCartTotal(cart))
     console.log("This is cart: ", cart)
 
   return (

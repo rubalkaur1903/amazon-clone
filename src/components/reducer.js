@@ -4,7 +4,8 @@ export const initialState = {
 
 // SELECTOR
 export const getCartTotal = (cart) => {
-    cart?.reduce((amount, item) => item.price + amount, 0)
+    console.log("cart in getCartTotal: ", cart)
+    cart?.reduce((amount, item) => Number(item.price) + amount, 0)
 }
 
 
